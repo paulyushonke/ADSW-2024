@@ -6,7 +6,7 @@ export default function StudentInfo() {
     <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100 p-4">
       <div className="w-full max-w-[600px] space-y-6 rounded-lg bg-white p-8 shadow-md">
         <h1 className="text-center text-3xl font-bold text-gray-800">
-          Architecture and Design Software P1
+          Architecture and Design of Software 2024
         </h1>
         <div className="space-y-4">
           <p className="text-center text-xl">Skuratovets Polina</p>
