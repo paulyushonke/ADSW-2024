@@ -1,6 +1,6 @@
 # ADSW-2024
 
-Welcome to the **ADSW-2024** repository! This project is a comprehensive implementation of various design patterns for the discipline "Architecture and Design Software (Part 1)" using the T3 Stack.
+Welcome to the **ADSW-2024** repository! This project is a comprehensive implementation of various design patterns for the discipline "Architecture and Design of Software (Part 1)" using the T3 Stack.
 
 ## Project Overview
 
