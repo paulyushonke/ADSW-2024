@@ -4,8 +4,8 @@
 import { sql } from "drizzle-orm";
 import {
   index,
-  integer,
   pgTableCreator,
+  serial,
   timestamp,
   varchar,
 } from "drizzle-orm/pg-core";
@@ -16,21 +16,27 @@ import {
  *
  * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
  */
-export const createTable = pgTableCreator((name) => `adsw_${name}`);
+export const createTable = pgTableCreator((name) => `adsw_lab2_${name}`);
 
 export const posts = createTable(
-  "post",
+  "employees",
   {
-    id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
+    id: serial("id").primaryKey(),
     name: varchar("name", { length: 256 }),
+    birthday: varchar("birthday", { length: 256 }),
+    gender: varchar("gender", { length: 256 }),
+    salary: varchar("salary", { length: 256 }),
+    progLang: varchar("prog_lang", { length: 256 }),
+    importance: varchar("importance", { length: 256 }),
+
     createdAt: timestamp("created_at", { withTimezone: true })
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).$onUpdate(
-      () => new Date()
+      () => new Date(),
     ),
   },
   (example) => ({
     nameIndex: index("name_idx").on(example.name),
-  })
+  }),
 );
