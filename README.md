@@ -1,29 +1,66 @@
-# Create T3 App
+# ADSW-2024
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Welcome to the **ADSW-2024** repository! This project is a comprehensive implementation of various design patterns for the discipline "Architecture and Design Software (Part 1)" using the T3 Stack.
 
-## What's next? How do I make an app with this?
+## Project Overview
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+This project focuses on web-based solutions to practical problems using design patterns such as Memento and Factory Method. It is built using the T3 Stack, which combines such modern technologies to create scalable and efficient applications:
+- **Next.js**: Server-side rendering and static site generation.
+- **Drizzle**: Database ORM.
+- **Tailwind CSS**: Styling framework.
+- **Shadcn**: A modern UI component library to enhance the user experience.
+- **Neon**: A cutting-edge serverless PostgreSQL solution for high-performance database access.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Lab Work Pages
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+This application includes lab work pages that demonstrate the following concepts:
 
-## Learn More
+1. **Lab 2: Implementing the Memento Pattern**
+   - Demonstrates state management and undo/redo functionality.
+   - Allows customization of an employee table UI.
+   - Key Features:
+     - Save and restore UI states using Memento.
+     - Supports settings for table styles like font and colors.
+   - **Objective**: Practical application of Memento and Command patterns for state management.
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+2. **Lab 3: Implementing the Factory Method Pattern**
+   - Handles data persistence and supports saving employee data in different formats:
+     - `.txt` for plain text,
+     - `.xml` for structured data,
+     - `.json` for web applications.
+   - **Objective**: Demonstrate Factory Method for flexible file generation.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Getting Started
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+### Prerequisites
+- Node.js
+- npm
 
-## How do I deploy this?
+### Installation
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/paulyushonke/ADSW-2024.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd ADSW-2024
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Set up environment variables by renaming `.env.example` to `.env` and filling required details.
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Features
+
+- **Undo/Redo Operations** using Memento Pattern.
+- **Export Options**:
+  - TXT, XML, JSON using Factory Method.
+- **Dynamic UI Customization**:
+  - Modify employee tables visually.
+  
